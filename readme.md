@@ -1,5 +1,4 @@
-
-### Mapa obcí tříkrálové sbírky
+# Mapa obcí tříkrálové sbírky
 dostupné na http://tks.dchhk.cz/
 
 ## Funkce
@@ -20,7 +19,7 @@ polohu a GPS souřadnice lze najít snadno například pomocí [Mapy.cz](http://
 
 ### Omezení pro názvy obcí
 Název obce musí být unikátní.
-V případě shodného názvu, lze navíc přidat do závorek  název obce, kde sídlí charita jež obec spravuje. Systém je pak interně rozezná.
+V případě shodného názvu, lze navíc přidat do závorek  název obce, kde sídlí charita, jež obec spravuje. Systém je pak interně rozezná.
 
 např:
 - Bohdašín
@@ -29,7 +28,7 @@ např:
 ## Seznam charit, jejich zkratka a barva
 
 |Charita|Zkratka|Barva|
-|---|---|------|---|---|
+|---|---|---|
 |DCH HK - Nové Město nad Metují|NM|red|
 |Farní charita Dobruška|DKA|yellow|
 |Farní charita Dolní Újezd|DU|red|

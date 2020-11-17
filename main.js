@@ -20,6 +20,8 @@ var lastClicked = false;
 var markers;
 var charity;
 var regionArray = [];
+var obceArray = [];
+var obceLokaceArray = [];
 
 // povolit debug v consoli
 console.DEBUG = 1
@@ -53,8 +55,6 @@ getPoi().then(({ lokality, charity }) => {
     var znacky = [];
     var souradnice = [];
     var obce = "";
-    var obceArray = [];
-    var obceLokaceArray = [];
     var counter = 0;
 
     for (var name in lokality) { /* Vyrobit značky */

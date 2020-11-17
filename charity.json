@@ -1,0 +1,86 @@
+{
+    "NM": {
+        "name": "DCH HK - Nové Město nad Metují",
+        "color": "red"
+    },
+    "DKA": {
+        "name": "Farní charita Dobruška",
+        "color": "yellow"
+    },
+    "DU": {
+        "name": "Farní charita Dolní Újezd",
+        "color": "red"
+    },
+    "DKNL": {
+        "name": "Farní charita Dvůr Králové nad Labem",
+        "color": "green"
+    },
+    "CHR": {
+        "name": "Farní charita Chrudim",
+        "color": "blue"
+    },
+    "LIT": {
+        "name": "Farní charita Litomyšl",
+        "color": "yellow"
+    },
+    "NA": {
+        "name": "Oblastní charita Náchod",
+        "color": "green"
+    },
+    "RK": {
+        "name": "Farní charita Rychnov nad Kněžnou",
+        "color": "green"
+    },
+    "STUD": {
+        "name": "Farní charita Studenec u Horek",
+        "color": "blue"
+    },
+    "PREL": {
+        "name": "Charita Přelouč",
+        "color": "yellow"
+    },
+    "CK": {
+        "name": "Oblastní charita Červený Kostelec",
+        "color": "red"
+    },
+    "HB": {
+        "name": "Oblastní charita Havlíčkův Brod",
+        "color": "red"
+    },
+    "HK": {
+        "name": "Oblastní charita Hradec Králové",
+        "color": "blue"
+    },
+    "JI": {
+        "name": "Oblastní charita Jičín",
+        "color": "yellow"
+    },
+    "JIL": {
+        "name": "Oblastní charita Jilemnice",
+        "color": "green"
+    },
+    "KH": {
+        "name": "Oblastní charita Kutná Hora",
+        "color": "green"
+    },
+    "NH": {
+        "name": "Oblastní charita Nové Hrady u Skutče",
+        "color": "green"
+    },
+    "PCE": {
+        "name": "Oblastní charita Pardubice",
+        "color": "red"
+    },
+    "POL": {
+        "name": "Oblastní charita Polička",
+        "color": "blue"
+    },
+    "TRUT": {
+        "name": "Oblastní charita Trutnov",
+        "color": "blue"
+    },
+    "UO": {
+        "name": "Oblastní charita Ústí nad Orlicí",
+        "color": "blue"
+    }
+}

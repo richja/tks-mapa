@@ -1,0 +1,185 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+#m {
+    height: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+}
+
+.sticky {
+    text-align: center;
+}
+
+#search {
+    padding: 5px;
+    width: 266px;
+    font-size: 16px;
+}
+
+#list-wrapper {
+    margin: 0;
+    padding: 0;
+    z-index: 99;
+    position:  absolute;
+    background: #fff;
+    right: 0;
+    width: 280px;
+    height: 100%;
+    overflow: hidden;
+    font-family: TriviaSeznam,"Arial CE",Arial;
+}
+
+#list-wrapper-hidden {
+    margin: 0;
+    padding: 0;
+    z-index: 99;
+    position:  absolute;
+    background: #fff;
+    right: 0;
+    width: 280px;
+    height: 100%;
+    overflow: hidden;
+    font-family: TriviaSeznam,"Arial CE",Arial;
+}
+
+#empty {
+    text-align: center;
+    padding: 10px;
+    display: none;
+}
+
+#list {
+    height: calc(100% - 79px); /* .sticky 69px - margin 10px */
+    overflow-y: scroll;
+    list-style-type: none;
+    margin: 10px 0 0 0;
+    padding: 0;
+    line-height: .9em;
+}
+
+#list li {
+    padding: 5px 5px 10px 30px;
+    cursor: pointer;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+#list li:hover {
+    font-weight: bold;
+    background-color: #F8F8F8;
+}
+
+#list span {
+    font-size: 0.8em;
+    color: grey;
+}
+
+.select-print-wrapper {
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    background: #fff;
+    padding: 5px;
+}
+
+.red {
+    background: url('http://api4.mapy.cz/img/api/marker/drop-red.png') no-repeat 10px 7px / 14px;
+    /*background-size: 14px;*/
+}
+
+/*.red:hover {
+    background: #F8F8F8 url('http://api4.mapy.cz/img/api/marker/drop-red.png') no-repeat 10px 7px / 14px;
+    /*background: #F8F8F8 url("http://api4.mapy.cz/img/api/marker/drop-red.png") no-repeat 7px 10px;
+}*/
+
+.yellow {
+    background: url('http://api4.mapy.cz/img/api/marker/drop-yellow.png') no-repeat 10px 7px / 14px;
+}
+
+/* .yellow:hover {
+    background: #F8F8F8 url('http://api4.mapy.cz/img/api/marker/drop-yellow.png') no-repeat 10px 7px / 14px;
+}*/
+
+.blue {
+    background: url('http://api4.mapy.cz/img/api/marker/drop-blue.png') no-repeat 10px 7px / 14px;
+}
+
+/*.blue:hover {
+    background: #F8F8F8 url('http://api4.mapy.cz/img/api/marker/drop-blue.png') no-repeat 10px 7px / 14px;
+}*/
+
+.green {
+    background: url('http://i.imgur.com/UCdmcJM.png') no-repeat 10px 7px / 14px;
+}
+
+#legenda {
+    position: absolute;
+    background: #fff;
+    z-index: 99;
+    padding: 5px;
+}
+
+#legenda img {
+    width: 10px;
+}
+
+.ruler-print {
+    height: 100%;
+    width: 180mm;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 99;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-top: 3px dashed #F00;
+    border-right: 3px dashed #F00;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+@media print {
+    #list-wrapper {
+        display: block;
+        position:  absolute;
+        left: 0;
+        top: 601px;
+        width: 100%;
+        height: auto;
+    }
+
+    #list-wrapper-hidden {
+        display: none;
+    }
+
+    #list {
+        height: auto;
+        overflow-y: auto;
+    }
+
+    #list li {
+        float: left;
+        width: 280px;
+    }
+
+    .select-print-wrapper, .ruler-print {
+        display: none;
+    }
+}

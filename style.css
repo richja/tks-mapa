@@ -94,8 +94,7 @@ h1 {
 }
 
 .red {
-    background: url('http://api4.mapy.cz/img/api/marker/drop-red.png') no-repeat 10px 7px / 14px;
-    /*background-size: 14px;*/
+    background: url('/images/drop-red.png') no-repeat 10px 7px / 14px;
 }
 
 /*.red:hover {
@@ -104,7 +103,7 @@ h1 {
 }*/
 
 .yellow {
-    background: url('http://api4.mapy.cz/img/api/marker/drop-yellow.png') no-repeat 10px 7px / 14px;
+    background: url('/images/drop-yellow.png') no-repeat 10px 7px / 14px;
 }
 
 /* .yellow:hover {
@@ -112,7 +111,7 @@ h1 {
 }*/
 
 .blue {
-    background: url('http://api4.mapy.cz/img/api/marker/drop-blue.png') no-repeat 10px 7px / 14px;
+    background: url('/images/drop-blue.png') no-repeat 10px 7px / 14px;
 }
 
 /*.blue:hover {
@@ -120,7 +119,7 @@ h1 {
 }*/
 
 .green {
-    background: url('http://i.imgur.com/UCdmcJM.png') no-repeat 10px 7px / 14px;
+    background: url('/images/drop-green.png') no-repeat 10px 7px / 14px;
 }
 
 #legenda {

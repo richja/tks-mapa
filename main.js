@@ -50,8 +50,6 @@ const getPoi = async () => {
 }
 
 getPoi().then(({ lokality, charity }) => {
-    console.log(lokality, charity)
-
     var znacky = [];
     var souradnice = [];
     var obce = "";

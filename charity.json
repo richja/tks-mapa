@@ -5,7 +5,8 @@
     },
     "DKA": {
         "name": "Farní charita Dobruška",
-        "color": "yellow"
+        "color": "yellow",
+        "web": "https://dobruska.charita.cz/"
     },
     "DU": {
         "name": "Farní charita Dolní Újezd",

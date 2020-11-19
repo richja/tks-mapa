@@ -9,12 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: copy file via ssh password
-        uses: appleboy/scp-action@master
+      - name: Upload files
+        uses: SamKirkland/FTP-Deploy-Action@3.1.1
         with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
-          port: 22
-          source: "charity.json"
-          target: ${{ secrets.DEST }}
+          ftp-server: ${{ secrets.HOST }}
+          ftp-username: ${{ secrets.SSH_USER }}
+          ftp-password: ${{ secrets.PASSWORD }}
+          git-ftp-args: --insecure --dry-run 

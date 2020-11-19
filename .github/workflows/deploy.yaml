@@ -10,11 +10,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Upload files
-        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        uses: SamKirkland/FTP-Deploy-Action@3.1.1
         with:
-          server-dir: ${{ secrets.DEST }}
-          server: ${{ secrets.HOST }}
-          username: ${{ secrets.SSH_USER }}
-          password: ${{ secrets.PASSWORD }}
-          port: 22
-          dry-run: true
+          ftp-server: ${{ secrets.HOST }}
+          ftp-username: ${{ secrets.SSH_USER }}
+          ftp-password: ${{ secrets.PASSWORD }}
+          git-ftp-args: --dry-run

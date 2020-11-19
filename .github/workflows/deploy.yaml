@@ -9,11 +9,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Copy via ssh
-        uses: garygrossgarten/github-action-scp@v0.6.0
+      - name: Upload files
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
-            local: /
-            remote: ${{ secrets.DEST }}
-            host: ${{ secrets.HOST }}
-            username: ${{ secrets.SSH_USER }}
-            password: ${{ secrets.PASSWORD }}
+          server-dir: ${{ secrets.DEST }}
+          server: ${{ secrets.HOST }}
+          username: ${{ secrets.SSH_USER }}
+          password: ${{ secrets.PASSWORD }}
+          port: 22
+          dry-run: true

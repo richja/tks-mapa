@@ -8,11 +8,11 @@ jobs:
   upload:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v1
       - name: git-ftp push
-        uses: sebastianpopp/git-ftp-action@releases/v3
+        uses: sebastianpopp/git-ftp-action@fix-ssl-issue
         with:
           url: ${{ secrets.HOST }}
           user: ${{ secrets.SSH_USER }}
           password: ${{ secrets.PASSWORD }}
-          options: --insecure
+          options: --auto-init --insecure

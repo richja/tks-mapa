@@ -9,10 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Upload files
-        uses: SamKirkland/FTP-Deploy-Action@3.1.1
+      - name: git-ftp push
+        uses: sebastianpopp/git-ftp-action@releases/v3
         with:
-          ftp-server: ${{ secrets.HOST }}
-          ftp-username: ${{ secrets.SSH_USER }}
-          ftp-password: ${{ secrets.PASSWORD }}
-          git-ftp-args: --insecure --dry-run 
+          url: ${{ secrets.HOST }}
+          user: ${{ secrets.SSH_USER }}
+          password: ${{ secrets.PASSWORD }}
+          options: --insecure

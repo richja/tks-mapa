@@ -34,3 +34,18 @@ jobs:
           user: ${{ secrets.SSH_USER }}
           password: ${{ secrets.PASSWORD }}
           options: --auto-init --insecure
+  send-email-on-success:
+    needs: upload
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Mail Action
+        id: sendmail
+        uses: vineetchoudhary/mailgun-action@v1.0
+        with:
+          api-key: ${{ secrets.MAILGUN_API_SECRET }}
+          domain: ${{ secrets.MAILGUN_DOMAIN }}
+          to: ${{ secrets.RECIPIENT }}
+          subject: Změny nahrány do mapy TKS
+          body: Ahoj, změny jsou nyní k vidění na webu http://tks.dchhk.cz/.<br /><br /><i>Tento e-mail je generovaný automaticky.</i>
+      - name: Send Mail Action Response
+        run: echo "${{ steps.sendmail.outputs.response }}"

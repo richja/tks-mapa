@@ -1,3 +1,4 @@
 .github/*
 package.json
 .git-ftp-ignore
+schemas/*

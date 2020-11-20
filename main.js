@@ -57,12 +57,13 @@ getPoi().then(({ lokality, charity }) => {
 
     for (var name in lokality) { /* Vyrobit značky */
         var coordsArray = lokality[name].split(",");
-        var lat = coordsArray[0];
-        var lon = coordsArray[1];
+        var lat = coordsArray[0].trim();
+        var lon = coordsArray[1].trim();
         var c = SMap.Coords.fromWGS84(lon, lat); /* Souřadnice značky, z textového formátu souřadnic */
 
-        region = name.split(", ")[0];
-        cleanName = name.split(", ")[1];
+        const nameArray = name.split(", ");
+        region = nameArray[0].trim();
+        cleanName = nameArray[1].trim();
 
         if (cleanName.split(" (").length > 1 && cleanName.split(" (")[1].slice(0, -1) === charity[region].name.slice(charity[region].name.length - cleanName.split(" (")[1].slice(0, -1).length)) {
             superCleanName = cleanName.split(" (")[0];

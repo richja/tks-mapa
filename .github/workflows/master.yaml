@@ -5,7 +5,18 @@ on:
       - master
 
 jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Validate lokality.json
+        uses: docker://orrosenblatt/validate-json-action:latest
+        env:
+          INPUT_SCHEMA: /schemas/lokality-schema.json
+          INPUT_JSONS: /lokality.json
+      
   upload:
+    needs: validate
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

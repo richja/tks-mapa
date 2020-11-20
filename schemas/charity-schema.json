@@ -1,0 +1,37 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "patternProperties": {
+        "^.*$": {
+            "anyOf": [
+                {
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "type": "string"
+                        },
+                        "color": {
+                            "type": "string",
+                            "enum": [
+                                "red",
+                                "yellow",
+                                "blue",
+                                "green"
+                            ]
+                        },
+                        "web": {
+                            "type": "string",
+                            "format": "uri"
+                        }
+                    },
+                    "required": [
+                        "name",
+                        "color"
+                    ],
+                    "additionalProperties": false
+                }
+            ]
+        }
+    },
+    "additionalProperties": false
+}

@@ -217,7 +217,6 @@ function printMapOnly() {
 
 function showRuler() {
     document.getElementsByClassName("ruler-print")[0].classList.toggle('show');
-    document.getElementsByClassName("ruler-print")[0].classList.toggle('hide');
 }
 
 function getCharityWeb(id) {

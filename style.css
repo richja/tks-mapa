@@ -4,14 +4,20 @@ html, body {
 
 body {
     margin: 0;
+    font-family: 'Ubuntu', sans-serif !important;
 }
 
 #m {
     height: 100%;
+    font-family: 'Ubuntu', sans-serif !important;
 }
 
 h1 {
     text-align: center;
+    margin: 0;
+}
+
+h2 {
     margin: 0;
 }
 
@@ -25,6 +31,10 @@ h1 {
     font-size: 16px;
 }
 
+#search::placeholder, input, #selectPrint {
+    font-family: 'Ubuntu', sans-serif;
+}
+
 #list-wrapper {
     margin: 0;
     padding: 0;
@@ -35,7 +45,6 @@ h1 {
     width: 280px;
     height: 100%;
     overflow: hidden;
-    font-family: TriviaSeznam,"Arial CE",Arial;
 }
 
 #list-wrapper-hidden {
@@ -48,7 +57,6 @@ h1 {
     width: 280px;
     height: 100%;
     overflow: hidden;
-    font-family: TriviaSeznam,"Arial CE",Arial;
 }
 
 #empty {
@@ -152,6 +160,15 @@ h1 {
 
 .show {
     display: block;
+}
+
+.close {
+    padding: 5px;
+    top: 0 !important;
+}
+
+.close::after {
+    font-size: 23px !important;
 }
 
 @media print {

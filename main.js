@@ -65,7 +65,10 @@ getPoi().then(({ lokality, charity }) => {
         region = nameArray[0].trim();
         cleanName = nameArray[1].trim();
 
-        if (cleanName.split(" (").length > 1 && cleanName.split(" (")[1].slice(0, -1) === charity[region].name.slice(charity[region].name.length - cleanName.split(" (")[1].slice(0, -1).length)) {
+        if (
+            cleanName.split(" (").length > 1 &&
+            cleanName.split(" (")[1].slice(0, -1) === charity[region].name.slice(charity[region].name.length - cleanName.split(" (")[1].slice(0, -1).length)
+        ) {
             superCleanName = cleanName.split(" (")[0];
         }
         else superCleanName = cleanName;
@@ -88,10 +91,17 @@ getPoi().then(({ lokality, charity }) => {
             anchor: { left: 10, bottom: 1 }  /* Ukotvení značky za bod uprostřed dole */
         }
 
-        var card = new SMap.Card();
-        card.getHeader().innerHTML = "<strong>" + superCleanName + "</strong>";
 
-        var znacka = new SMap.Marker(c, cleanName, options);
+        const card = new SMap.Card();
+        card.getHeader().innerHTML = "<h2>" + superCleanName + "</h2>";
+
+        const web = getCharityWeb(region);
+        if (web) {
+            const cardContent = "<br>🌍 <a href='" + web + "' alt='odkaz na web charity' title='odkaz na web charity'>" + web + "</a>";
+            card.getBody().innerHTML = cardContent
+        }
+
+        const znacka = new SMap.Marker(c, cleanName, options);
         znacka.decorate(SMap.Marker.Feature.Card, card);
         souradnice.push(c);
         znacky.push(znacka);
@@ -208,4 +218,8 @@ function printMapOnly() {
 function showRuler() {
     document.getElementsByClassName("ruler-print")[0].classList.toggle('show');
     document.getElementsByClassName("ruler-print")[0].classList.toggle('hide');
+}
+
+function getCharityWeb(id) {
+    return charity[id].web;
 }

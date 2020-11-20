@@ -44,6 +44,7 @@ jobs:
         with:
           api-key: ${{ secrets.MAILGUN_API_SECRET }}
           domain: ${{ secrets.MAILGUN_DOMAIN }}
+          from: ${{ secrets.FROM }}
           to: ${{ secrets.RECIPIENT }}
           subject: Změny nahrány do mapy TKS
           body: Ahoj, změny jsou nyní k vidění na webu http://tks.dchhk.cz/.<br /><br /><i>Tento e-mail je generovaný automaticky.</i>

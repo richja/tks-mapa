@@ -48,6 +48,6 @@ jobs:
           to: ${{ secrets.RECIPIENT }}
           cc: ${{ secrets.CARBON_COPY }}
           subject: Změny nahrány do mapy TKS
-          body: Ahoj, změny od ${GITHUB_ACTOR} jsou nyní k vidění na webu http://tks.dchhk.cz/.<br /><br /><i>Tento e-mail je generovaný automaticky.</i>
+          body: Ahoj, změny od {{ GITHUB_ACTOR }} jsou nyní k vidění na webu http://tks.dchhk.cz/.<br /><br /><i>Tento e-mail je generovaný automaticky.</i>
       - name: Send Mail Action Response
         run: echo "${{ steps.sendmail.outputs.response }}"

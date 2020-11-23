@@ -40,7 +40,7 @@ jobs:
     steps:
       - name: Send Mail Action
         id: sendmail
-        uses: vineetchoudhary/mailgun-action@v1.0
+        uses: vineetchoudhary/mailgun-action@v1.1
         with:
           api-key: ${{ secrets.MAILGUN_API_SECRET }}
           domain: ${{ secrets.MAILGUN_DOMAIN }}

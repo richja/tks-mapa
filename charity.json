@@ -6,23 +6,27 @@
     "DKA": {
         "name": "Farní charita Dobruška",
         "color": "yellow",
-        "web": "https://dobruska.charita.cz/"
+        "web": "https://dobruska.charita.cz/"target="_blank"
     },
     "DU": {
         "name": "Farní charita Dolní Újezd",
         "color": "red"
+        "web": "https://dolniujezd.charita.cz/"target="_blank"
     },
     "DKNL": {
         "name": "Farní charita Dvůr Králové nad Labem",
         "color": "green"
+        "web": "
     },
     "CHR": {
         "name": "Farní charita Chrudim",
         "color": "blue"
+        "web": "
     },
     "LIT": {
         "name": "Farní charita Litomyšl",
         "color": "yellow"
+        "web": "
     },
     "NA": {
         "name": "Oblastní charita Náchod",

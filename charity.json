@@ -11,31 +11,32 @@
     "DU": {
         "name": "Farní charita Dolní Újezd",
         "color": "red"
-        "web": "https://dolniujezd.charita.cz/"
+        "web" "https://dolniujezd.charita.cz/"
     },
     "DKNL": {
         "name": "Farní charita Dvůr Králové nad Labem",
         "color": "green"
-        "web": "https://dk.charita.cz/"
+        "web" "https://dk.charita.cz/"
     },
     "CHR": {
         "name": "Farní charita Chrudim",
         "color": "blue"
-        "web": "https://chrudim.charita.cz/"
+        "web" "https://chrudim.charita.cz/"
     },
     "LIT": {
         "name": "Farní charita Litomyšl",
         "color": "yellow"
-        "web": "https://litomysl.charita.cz/"
+        "web" "https://litomysl.charita.cz/"
     },
     "NA": {
         "name": "Oblastní charita Náchod",
         "color": "green"
-        "web": "https://nachod.charita.cz/"
+        "web" "https://nachod.charita.cz/"
     },
     "RK": {
         "name": "Farní charita Rychnov nad Kněžnou",
         "color": "green"
+        "web" "https://rychnov.charita.cz/"
     },
     "STUD": {
         "name": "Farní charita Studenec u Horek",

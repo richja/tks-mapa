@@ -26,14 +26,14 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          fetch-depth: 5
+          fetch-depth: 10
       - name: git-ftp push
         uses: sebastianpopp/git-ftp-action@fix-ssl-issue
         with:
           url: ${{ secrets.HOST }}
           user: ${{ secrets.SSH_USER }}
           password: ${{ secrets.PASSWORD }}
-          options: --auto-init --insecure
+          options: --auto-init --insecure --force
   send-email-on-success:
     needs: upload
     runs-on: ubuntu-latest

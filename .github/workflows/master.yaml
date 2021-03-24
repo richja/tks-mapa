@@ -33,7 +33,7 @@ jobs:
           url: ${{ secrets.HOST }}
           user: ${{ secrets.SSH_USER }}
           password: ${{ secrets.PASSWORD }}
-          options: --auto-init --insecure --force
+          options: --auto-init --insecure
   send-email-on-success:
     needs: upload
     runs-on: ubuntu-latest

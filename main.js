@@ -97,7 +97,7 @@ getPoi().then(({ lokality, charity }) => {
 
         const web = getCharityWeb(region);
         if (web) {
-            const cardContent = "<br>🌍 <a href='" + web + "' alt='odkaz na web charity' title='odkaz na web charity'>" + web + "</a>";
+            const cardContent = "<br>🌍 <a href='" + web + "' target='_blank' alt='odkaz na web charity' title='odkaz na web charity'>" + web + "</a>";
             card.getBody().innerHTML = cardContent
         }
 

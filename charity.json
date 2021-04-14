@@ -10,7 +10,7 @@
     },
     "DU": {
         "name": "Farní charita Dolní Újezd",
-        "color": "red"
+        "color": "red",
         "web": "https://dolniujezd.charita.cz/"
     },
     "DKNL": {
@@ -40,68 +40,68 @@
     },
     "STUD": {
         "name": "Farní charita Studenec u Horek",
-        "color": "blue"
+        "color": "blue",
         "web": "https://studenec.charita.cz/"
     },
     "PREL": {
         "name": "Charita Přelouč",
-        "color": "yellow"
+        "color": "yellow",
         "web": "https://prelouc.charita.cz/"
     },
     "CK": {
         "name": "Oblastní charita Červený Kostelec",
-        "color": "red"
+        "color": "red",
         "web": "https://www.ochck.cz/"
     },
     "HB": {
         "name": "Oblastní charita Havlíčkův Brod",
-        "color": "red"
+        "color": "red",
         "web": "https://hb.charita.cz/"
         
     },
     "HK": {
         "name": "Oblastní charita Hradec Králové",
-        "color": "blue"
+        "color": "blue",
         "web": "https://www.charitahk.cz/"
     },
     "JI": {
         "name": "Oblastní charita Jičín",
-        "color": "yellow"
+        "color": "yellow",
         "web": "https://jicin.charita.cz/"
     },
     "JIL": {
         "name": "Oblastní charita Jilemnice",
-        "color": "red"
+        "color": "red",
         "web": "https://jilemnice.charita.cz/"
     },
     "KH": {
         "name": "Oblastní charita Kutná Hora",
-        "color": "green"
+        "color": "green",
         "web": "https://kh.charita.cz/"
     },
     "NH": {
         "name": "Oblastní charita Nové Hrady u Skutče",
-        "color": "green"
+        "color": "green",
         "web": "https://novehrady.charita.cz/"
     },
     "PCE": {
         "name": "Oblastní charita Pardubice",
-        "color": "red"
+        "color": "red",
         "web": "https://pardubice.charita.cz/"
     },
     "POL": {
         "name": "Oblastní charita Polička",
-        "color": "blue"
+        "color": "blue",
         "web": "https://policka.charita.cz/"
     },
     "TRUT": {
         "name": "Oblastní charita Trutnov",
-        "color": "blue"
+        "color": "blue",
         "web": "https://trutnov.charita.cz/"
     },
     "UO": {
         "name": "Oblastní charita Ústí nad Orlicí",
-        "color": "blue"
+        "color": "blue",
         "web": "https://uo.charita.cz/"
     }
 }

@@ -14,12 +14,12 @@
         "web": "https://dolniujezd.charita.cz/"
     },
     "DKNL": {
-        "name": "Farní charita Dvůr Králové nad Labem",
+        "name": "Oblastní charita Dvůr Králové",
         "color": "green",
         "web": "https://dk.charita.cz/"
     },
     "CHR": {
-        "name": "Farní charita Chrudim",
+        "name": "Oblastní charita Chrudim",
         "color": "blue",
         "web": "https://chrudim.charita.cz/"
     },
@@ -34,7 +34,7 @@
         "web": "https://nachod.charita.cz/"
     },
     "RK": {
-        "name": "Farní charita Rychnov nad Kněžnou",
+        "name": "Oblastní charita Rychnov nad Kněžnou",
         "color": "green",
         "web": "https://rychnov.charita.cz/"
     },
